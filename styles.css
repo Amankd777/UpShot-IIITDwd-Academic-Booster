@@ -1,0 +1,152 @@
+/* body */
+body{
+    color: rgb(63, 66, 70);
+    font-family: 'Manrope', sans-serif;
+    background-color: rgb(255, 246, 246);
+}
+
+.dark-mode {
+    background-color: rgb(31, 28, 28);
+    color: white;
+  }
+
+.dark-mode a{
+    color: rgb(253, 178, 80);
+}
+
+
+/* navbar margin */
+.container-fluid{
+    margin: 1%;
+}
+
+/* navbar */
+.navbar-text{
+    font-size: 1.3rem;
+    padding-left: 4%;
+    font-family: 'Comfortaa', cursive;
+}
+
+a.navbar-brand{
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(235, 71, 30);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(211, 49, 49);
+    font-weight: 500;
+}
+
+#profile{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* carousels */
+.carousel .carousel-item {
+    max-height: 560px;
+}
+
+.carousel-item img {
+    object-fit:cover;
+    max-height: 550px;
+}  
+/* carousel prev and next buttons width */
+.carousel-control-prev {
+    width: 75px;
+}
+.carousel-control-next {
+    width: 75px;
+}
+
+/* features */
+#f1,#f2,#f3,#f4,#f5,#f6{
+    padding: 5%;
+}
+
+p{
+    font-size: 1.2rem;
+}
+/* features .container-fluid */
+#featcon.container-fluid{
+    padding: 3% 17% 3% 15%;
+}
+
+#f2,#f4,#f6{
+    padding-left: 2%;
+}
+#f1,#f3,#f5{
+    padding-right: 0%;
+}
+
+/* upload notes */
+a .fa-circle-plus{
+    text-align: center;
+    font-size: 2.4rem;
+    margin-left: 25%;
+    margin-top: 5%;
+    color: orangered;
+}
+
+/* image features */
+.eximg{
+    position: relative;
+    width: 85%;
+    border-radius: 3.5rem;
+}
+
+/* features in smaller screens */
+@media (max-width: 920px) {
+    #f1,#f2,#f3,#f4,#f5,#f6{
+        text-align: center;
+    }    
+    #f1,#f3,#f5{
+        padding: 0% 5% 0%;
+    }
+    #featcon.container-fluid{
+        padding: 3% 10% 0% 10%;
+    }
+    a .fa-circle-plus{
+        text-align: center;
+        font-size: 2.4rem;
+        margin:auto;
+        margin-bottom: 8%;
+        color: orangered;
+    }
+}
+
+/* Professor section */
+.btn-outline-primary{
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+.btn-outline-primary:hover{
+    background-color: rgb(216, 82, 49);
+    border: 3px solid rgb(216, 82, 49);
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
+/* footer icons */
+footer i{
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+footer i:hover{
+    color: rgb(120, 235, 91);
+}
+/* copyright */
+footer p{    
+    color: #8f8f8f;
+    font-size: 1rem;
+}
