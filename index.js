@@ -12,34 +12,37 @@ checkbox.addEventListener("change", function(){
 // Material Select Initialization
 // pyq modal box
 var modalpyq = $("#pyq");
-$(".modal-box-1").click(function(){
-  modalpyq.show();
-  $("body").css("overflow","hidden");
+$(".modal-box-1").click(function(){  
+  setTimeout(function(){
+    modalpyq.show();
+  },750)  
 })
 $(".close").click(function(){
   modalpyq.hide();
-  $("body").css("overflow","visible");
+  $("body").css("overflow-y","visible");
 });
 
 // model modal box
 var modalmodel = $("#model");
 $(".modal-box-2").click(function(){
-  modalmodel.show();
-  $("body").css("overflow","hidden");
+  setTimeout(function(){
+    modalmodel.show();
+  },750)  
 });
 $(".close").click(function(){
   modalmodel.hide();
-  $("body").css("overflow","visible");
+  $("body").css("overflow-y","visible");
 });
 
 // notes modal box
 var modalnotes = $("#notes");
 $(".modal-box-3").click(function(){
-  modalnotes.show();
-  $("body").css("overflow","hidden");
+  setTimeout(function(){
+    modalnotes.show();
+  },750)
 });
 $(".close").click(function(){
   modalnotes.hide();
-  $("body").css("overflow","visible");
+  $("body").css("overflow-y","visible");
 });
 

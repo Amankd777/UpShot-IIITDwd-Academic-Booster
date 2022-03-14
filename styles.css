@@ -4,12 +4,19 @@ body{
     font-family: 'Manrope', sans-serif;
     background-color: rgb(255, 246, 246);
     transition: background .5s linear;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden;
 }
 
+/* Dark - mode changes */
 #navbar-mod{
     transition: background .5s linear;
 }
 
+/* Body-dark mode */
 .dark-mode {
     background-color: #272a33;
     color: white;
@@ -31,6 +38,7 @@ body{
     color: black;
 }
 
+/* navbar dark mode */
 .dark-mode .navbar-brand {
     color: rgb(255, 191, 95);
 }
@@ -39,7 +47,17 @@ body{
     color: rgb(233, 195, 138);
 }
 
+.dark-mode .navbar-toggler{
+    background-color: white;
+    color: #111;
+}
 
+.dark-mode .navbar-toggler-icon{
+    color: white;
+    background-color: bisque;
+}
+
+/* button dark mode */
 .dark-mode .btn-outline-primary{
     color: black;
     background-color: whitesmoke;
@@ -69,6 +87,7 @@ body{
     padding: 5px;
 }
 
+/* Theme toggler */
 .checkbox{
     opacity: 0;
     position: absolute;
@@ -90,6 +109,7 @@ body{
     transition: transform .25s linear;
 }
 
+/* Theme icons */
 .fa-moon{
     color: #f1c40f;
 }
@@ -98,6 +118,7 @@ body{
     color: #f39c12;
 }
 
+/* navbar text */
 .navbar-text{
     font-size: 1.3rem;
     padding-left: 4%;
