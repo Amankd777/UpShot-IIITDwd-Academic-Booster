@@ -29,7 +29,7 @@
     <title>UpShotIIITDwd</title>
 </head>
 
-<body class="dark-mode">
+<body>
     <!-- Navigation bar -->
     <section>
         <nav id= "navbar-mod" class="navbar navbar-expand-lg navbar-light bg-light">
@@ -49,8 +49,13 @@
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <!-- navigation items -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-moon"></i></a>
+                        <li class="nav-item nav-link">
+                                <input type="checkbox" name="" class = "checkbox" id="checkbox">
+                                <label for="checkbox" class="label">
+                                    <i class="fa-solid fa-sun"></i></a>
+                                    <i class="fa-solid fa-moon"></i></a>
+                                    <div class="ball"></div>
+                                </label>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -71,8 +76,8 @@
         </nav>
     </section>
 
+    <!-- carousel  -->
     <section id="carouselheight">
-        <!-- carousel  -->
         <div id="carouselExampleLight" class="carousel carousel-light slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <!-- carousel-indicators -->
@@ -146,25 +151,26 @@
 
                 <!-- pyqs -->
                 <div id="f1" class="col-lg-4">
-                    <img class="eximg" src="Features-Images/pyq.png" alt="modelPapers">
+                    <img class="eximg  modal-box-1" src="Features-Images/pyq.png" alt="modelPapers">
                 </div>
 
                 <div id="f2" class="col-lg-8">
-                    <a href="#" class="text-decoration-none">
+                    <a href="javascript: void(0)" class="text-decoration-none  modal-box-1">
                         <h3>Previous Batch Question Papers</h3>
                     </a>
-                    <p>Facility to download previous years' question papers along with solutions in PDF format. This
-                        will help you to understand the pattern of questions asked by the examiners in those papers.</p>                    
+                    <p>Chech out some previous years' question papers along with solutions in PDF format. This
+                    will help you to understand the pattern of questions asked by the examiners in the examination and <br><br>
+                    You can also practice managing your time by attempting these like a mock exam.</p>                    
                     <a href=""><i class="fa-solid fa-file-plus"></i></a>
                 </div>
 
                 <!-- model papers -->
                 <div id="f3" class="col-lg-4">
-                    <img class="eximg" src="Features-Images/model papers.png" alt="modelPapers">
+                    <img class="eximg modal-box-2" src="Features-Images/model papers.png" alt="modelPapers">
                 </div>
 
                 <div id="f4" class="col-lg-8">
-                    <a href="#" class="text-decoration-none">
+                    <a href="javascript: void(0)" class="text-decoration-none modal-box-2">
                         <h3>Model Papers</h3>
                     </a>
                     <p>Practice makes you perfect. You can use these papers for practice purposes or as a revision tool.
@@ -173,25 +179,207 @@
 
                 <!-- notes -->
                 <div id="f5" class="col-lg-4">
-                    <img class="eximg" src="Features-Images/notes.png" alt="modelPapers">
+                    <img class="eximg  modal-box-3" src="Features-Images/notes.png" alt="modelPapers">
                 </div>
 
                 <div id="f6" class="col-lg-8">
-                    <a href="#" class="text-decoration-none">
+                    <a href="javascript: void(0)" class="text-decoration-none modal-box-3">
                         <h3>Handwritten Notes and PDF's</h3>
                     </a>
-                    <p>You may find Handwritten notes by your seniors or even your classmates rarely. Also some of the
+                    <p>You may find Handwritten notes by your seniors or even your classmates(rarely). Also some of the
                         PDFs shared by your professor.</p>
                     <a href=""><i class="fa-solid fa-circle-plus"></i></a>   
-                </div>
-                
+                </div>                
 
             </div>
-        </div>
-
-        
+        </div>        
 
     </section>
+
+        <!-- Modal: modalQuickView -->
+        <div class="modal" id="pyq" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-toggle="modal" data-target="#modalQuickView" data-backdrop="true" data-keyboard="false"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                      data-ride="carousel">
+                      
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100"
+                            src="https://m.media-amazon.com/images/I/71AtCTSVtbS._SX425_.jpg">
+                        </div>
+                        <div class="carousel-item"></div>
+                        <div class="carousel-item"></div>
+                      </div>
+                      <!--/.Slides-->
+
+                    </div>
+                    <!--/.Carousel Wrapper-->
+
+                  </div>
+
+                  <!-- Heading -->
+                  <div class="col-lg-7">
+                    <h2 class="h2-responsive product-name">
+                      <strong>PYQs</strong><br><br>
+                      <p>Select A Course</p>
+                    </h2>  
+                    <!-- /.Heading -->          
+  
+                  <!-- Course list -->
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Linear Algebra</a>
+                      <a href="#" class="list-group-item list-group-item-action">Software Engineering</a>
+                      <a href="#" class="list-group-item list-group-item-action">Database Management Systems </a>
+                      <a href="#" class="list-group-item list-group-item-action">Introduction to Systems Thinking</a>
+                      <a href="#" class="list-group-item list-group-item-action">Cloud Computing</a>
+                      <a href="#" class="list-group-item list-group-item-action">Global Business Perspectives</a>
+                    </div>
+                    <!-- /.Course list -->
+        
+        
+                    <!-- Add to Cart -->
+                    <div class="card-body">
+                      <div class="row">                      
+                      </div>
+                      <div class="text-center">      
+                        <button type="button" class="btn btn-danger close" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    <!-- /.Add to Cart -->
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal" id="model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-toggle="modal" data-target="#modalQuickView"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-5">
+                  <!--Carousel Wrapper-->
+                  <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                    data-ride="carousel">
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100"
+                          src="https://i.pinimg.com/564x/de/fe/42/defe427e725311143ab9d046712afb18--quotes-girls-teen-quotes-tumblr.jpg">
+                      </div>
+                      <div class="carousel-item"></div>
+                      <div class="carousel-item"></div>
+                    </div>
+                    <!--/.Slides-->
+
+                  </div>
+                  <!--/.Carousel Wrapper-->
+
+                  <!-- heading -->
+                </div>
+                <div class="col-lg-7">
+                  <h2 class="h2-responsive product-name">
+                      <strong>Model(Sample) Papers</strong><br><br>
+                      <p>Select A Course</p>
+                  </h2>    
+                  <!--  /.heading-->
+  
+                <!-- Course list -->
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Linear Algebra</a>
+                    <a href="#" class="list-group-item list-group-item-action">Software Engineering</a>
+                    <a href="#" class="list-group-item list-group-item-action">Database Management Systems </a>
+                    <a href="#" class="list-group-item list-group-item-action">Introduction to Systems Thinking</a>
+                    <a href="#" class="list-group-item list-group-item-action">Cloud Computing</a>
+                    <a href="#" class="list-group-item list-group-item-action">Global Business Perspectives</a>
+                  </div>
+      
+      
+                  <!-- Add to Cart -->
+                  <div class="card-body">
+                    <div class="row">                      
+                    </div>
+                    <div class="text-center">      
+                      <button type="button" class="btn btn-danger close" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  <!-- /.Add to Cart -->
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  
+        <div class="modal" id="notes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-toggle="modal" data-target="#modalQuickView"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-5">
+                <!--Carousel Wrapper-->
+                <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                  data-ride="carousel">
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100"
+                        src="https://thumbs.dreamstime.com/b/imagine-your-mind-believe-your-heart-achieve-all-your-might-imagine-your-mind-believe-your-heart-achieve-150802149.jpg">
+                    </div>
+                    <div class="carousel-item"></div>
+                    <div class="carousel-item"></div>
+                  </div>
+                  <!--/.Slides-->
+                </div>
+                <!--/.Carousel Wrapper-->
+              </div>
+              <div class="col-lg-7">
+                <h2 class="h2-responsive product-name">
+                  <strong>Notes and PDFs</strong><br><br>
+                  <p>Select A Course</p>
+                </h2>            
+  
+              <!-- Course list -->
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action">Linear Algebra</a>
+                  <a href="#" class="list-group-item list-group-item-action">Software Engineering</a>
+                  <a href="#" class="list-group-item list-group-item-action">Database Management Systems </a>
+                  <a href="#" class="list-group-item list-group-item-action">Introduction to Systems Thinking</a>
+                  <a href="#" class="list-group-item list-group-item-action">Cloud Computing</a>
+                  <a href="#" class="list-group-item list-group-item-action">Global Business Perspectives</a>
+                </div>
+    
+    
+                <!-- Add to Cart -->
+                <div class="card-body">
+                  <div class="row">                      
+                  </div>
+                  <div class="text-center">      
+                    <button type="button" class="btn btn-danger close" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                <!-- /.Add to Cart -->
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
 
     <!-- Professor contact section  -->
     <section>
@@ -213,6 +401,7 @@
     </footer>
 
     <!-- javascript link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js"></script>
 </body>
 
