@@ -5,6 +5,8 @@ checkbox.addEventListener("change", function(){
     document.body.classList.toggle("dark-mode");
     document.querySelector("#sidebar").classList.toggle("bg-light");
     document.querySelector("#sidebar").classList.toggle("navbar-light");
+    document.querySelector("#navbar-mod").classList.toggle("bg-light");
+    document.querySelector("#navbar-mod").classList.toggle("navbar-light");
   }
 )
   

@@ -49,13 +49,10 @@ body{
 
 .dark-mode .navbar-toggler{
     background-color: white;
-    color: #111;
+    height: 4px;
+    width: 4px;
 }
 
-.dark-mode .navbar-toggler-icon{
-    color: white;
-    background-color: bisque;
-}
 
 /* button dark mode */
 .dark-mode .btn-outline-primary{

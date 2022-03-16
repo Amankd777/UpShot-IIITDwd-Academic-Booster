@@ -3,7 +3,7 @@ body{
     color: rgb(63, 66, 70);
     font-family: 'Manrope', sans-serif;
     background-color: rgb(255, 255, 255);
-    transition: background 1s linear;
+    transition: background .5s linear;
     width: 100% !important;
     height: 100% !important;
     margin: 0px !important;
@@ -13,8 +13,25 @@ body{
 
 /* Dark - mode changes */
 #sidebar{
-    transition: background .7s linear;
+    transition: background .5s linear;
 }
+
+/* navbar dark mode */
+.dark-mode #navbar-mod{
+    background-color: #272a33;
+}
+.dark-mode .navbar-brand {
+    color: rgb(255, 191, 95);
+}
+
+.dark-mode .navbar-brand:hover {
+    color: rgb(233, 195, 138);
+}
+
+.dark-mode .navbar-toggler{
+    background-color: white;
+}
+
 
 /* Body-dark mode */
 .dark-mode {
@@ -40,7 +57,6 @@ body{
 
 .dark-mode #sidebar{
     background-color: #2d313d;
-    z-index: 0;
 }
 
 .dark-mode .list-group-item{
@@ -60,15 +76,6 @@ body{
     color: rgb(233, 195, 138);
 }
 
-.dark-mode .navbar-toggler{
-    background-color: white;
-    color: #111;
-}
-
-.dark-mode .navbar-toggler-icon{
-    color: white;
-    background-color: bisque;
-}
 
 /* navbar margin */
 .container-fluid{
@@ -197,6 +204,7 @@ a.navbar-brand{
 
 .py-2{
     background-color: rgb(248, 249, 250);
+    transition: background .5s linear;
 }
 
 .dark-mode .py-2{
@@ -233,7 +241,7 @@ a.navbar-brand{
     padding-top: 5%;
 } 
 
-@media (max-width: 950px) {
+@media (max-width: 990px) {
     #main{
         margin-left: 1%;
         padding: 3%;
@@ -253,5 +261,48 @@ a.navbar-brand{
         margin: 7%;
         margin-bottom: 3%;
         margin-left: 23%;
+    }       
+    .label {
+        height: 25px;
+        width: 27px;
+        border-radius: 50%;
     }
+    .ball{
+        visibility: hidden;
+    }
+    .fa-sun{
+        display: none;
+    }
+    .dark-mode .navbar-toggler{
+        width: 4px;
+        height: 2px;
+        background-color: white;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 990px) {
+    #navbar-mod{
+        display: none;
+    }
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
+/* footer icons */
+footer i{
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+footer i:hover{
+    color: rgb(120, 235, 91);
+}
+/* copyright */
+footer p{    
+    color: #8f8f8f;
+    font-size: 1rem;
 }
