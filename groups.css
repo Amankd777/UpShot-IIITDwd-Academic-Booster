@@ -2,17 +2,18 @@
 body{
     color: rgb(63, 66, 70);
     font-family: 'Manrope', sans-serif;
-    background-color: rgb(255, 246, 246);
-    transition: background .5s linear;
+    background-color: rgb(255, 255, 255);
+    transition: background 1s linear;
+    width: 100% !important;
     height: 100% !important;
     margin: 0px !important;
     padding: 0px !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* Dark - mode changes */
-#navbar-mod{
-    transition: background .5s linear;
+#sidebar{
+    transition: background .7s linear;
 }
 
 /* Body-dark mode */
@@ -35,6 +36,11 @@ body{
 
 .dark-mode .card a{
     color: azure;
+}
+
+.dark-mode #sidebar{
+    background-color: #2d313d;
+    z-index: 0;
 }
 
 .dark-mode .list-group-item{
@@ -148,6 +154,7 @@ a.navbar-brand{
 .btn{
     border-radius: 40px;
     margin: 2%;
+    margin-left: 0%;
 }
 
 .btn:hover {
@@ -157,11 +164,12 @@ a.navbar-brand{
 .card{
     margin: 0% 2% 5%;
     justify-content: center;
+    background-color: rgb(234, 255, 250);
 }
 
 #featcon.container-fluid{
     padding: 3% 3% 3% 0%;
-    margin-left: 10%;
+    margin-left: 12%;
     margin-right: 0%;
 }
 
@@ -169,47 +177,81 @@ a.navbar-brand{
     color: #111;
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: 950px) {
     main {
-      padding-left: 240px;
-    }
-  }
+      padding-left: 300px;
+ }
+}
   
-  /* Sidebar */
-  .sidebar {
+/* Sidebar */
+#sidebar {
     position: fixed;
     top: 0px;
     bottom: 0;
     left: 0;
     padding: 58px 0 0; /* Height of navbar */
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 240px;
+    width: 275px;
     z-index: 600;
-  }
-  
-  @media (max-width: 991.98px) {
-    .sidebar {
-      width: 100%;
-    }
-  }
-  .sidebar .active {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-  }
-  
-  .sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: 0.5rem;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  }
+}
 
-  .py-2{
-      background-color: rgb(248, 249, 250);
-  }
+.py-2{
+    background-color: rgb(248, 249, 250);
+}
 
-  .py-2:hover{
+.dark-mode .py-2{
+    background-color: #2d313d;
+}
+
+.dark-mode .py-2:hover{
+    color: white;
+}
+
+.py-2:hover{
     color: rgb(243, 196, 65);
-  }
+}
+
+.sidebarMenu{
+    width: 300px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    margin-left: 280px;
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+.dark-mode .darkp{
+    color: rgb(156, 228, 204);
+}
+
+.desc-img{
+    width: 80%;
+    height: 100%;
+    padding-left: 30%;
+    padding-top: 5%;
+} 
+
+@media (max-width: 950px) {
+    #main{
+        margin-left: 1%;
+        padding: 3%;
+        width: 100%;
+    }
+    .sidebarMenu{
+        width: 0px;
+    }
+    .desc-img{
+        width: 80%;
+        height: 100%;
+        padding-left: 15%;
+        padding-top: 5%;
+    } 
+    .btn{
+        border-radius: 40px;
+        margin: 7%;
+        margin-bottom: 3%;
+        margin-left: 23%;
+    }
+}

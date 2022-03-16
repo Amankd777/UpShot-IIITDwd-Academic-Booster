@@ -223,6 +223,10 @@ a .fa-circle-plus{
 }
 
 /* modals */
+.modal{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .modal-content{
     background-color: white;
     color: black;
