@@ -246,7 +246,7 @@ a.navbar-brand{
 }
 
 h5{
-    color: rgb(83, 83, 236);
+    color: rgb(118, 118, 255);
 }
 
 .dark-mode h5{
@@ -257,6 +257,22 @@ h5{
     color: whitesmoke;
 }
 
-h3{
+.dark-mode strong{
+    color: #fff0b3;
+}
+
+h6{
     color: red;
+}
+
+.dark-mode .accordion-collapse{
+    background-color: #17191f;
+}
+
+.dark-mode .accordion-button{
+    background-color: #e1e9ff;
+}
+
+.dark-mode .accordion{
+    background-color: #2d313d;
 }
