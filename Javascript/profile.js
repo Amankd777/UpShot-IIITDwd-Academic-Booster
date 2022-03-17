@@ -38,3 +38,39 @@ checkbox.addEventListener("change", () => {
       // document.querySelector("#sidebar").classList.toggle("bg-light");
       // document.querySelector("#sidebar").classList.toggle("navbar-light");
   })
+
+// Cool pic
+$("#coolImage").click(function(e) {
+  $("#picUpload").click();
+});
+
+$("#picUpload").change(function(){
+  fastPreview( this );
+});
+
+function fastPreview( uploader ) {
+    if ( uploader.files ){
+          $('#coolImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0])
+              );
+    }
+}
+
+// Profile Pic
+$("#profileImage").click(function(e) {
+  $("#imageUpload").click();
+});
+
+$("#imageUpload").change(function(){
+  fasterPreview( this );
+});
+
+function fasterPreview( uploader ) {
+    if ( uploader.files ){
+          $('#profileImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0])
+              );
+    }
+}
+
+

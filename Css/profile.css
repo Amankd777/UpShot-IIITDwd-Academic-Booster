@@ -338,3 +338,34 @@ a.navbar-brand{
 .dark-mode .justify-content-between:hover{
     color: pink;
 }
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage:hover{
+    cursor: pointer;
+}
+
+#picUpload
+{
+    display: none;
+}
+
+#profile-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+

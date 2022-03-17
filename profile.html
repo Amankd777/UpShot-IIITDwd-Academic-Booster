@@ -57,7 +57,7 @@
                         <a href="tips and resources.html" class="list-group-item list-group-item-action py-2 ripple">
                             <i class="fas fa-calendar fa-fw me-3"></i><span>Tips & Resources</span></a>
                         <!-- Profile -->
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
+                        <a href="javascript: void(0)" class="list-group-item list-group-item-action py-2 ripple active">
                             <i class="fa-solid fa-id-card-clip fa-fw me-3"></i><span>Profile</span></a>
                         <!-- Logout -->
                         <a href="#" class="list-group-item list-group-item-action py-2 ripple">
@@ -94,7 +94,7 @@
                             <!-- Tips -->
                             <a href="tips and resources.html" class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-calendar fa-fw me-3"></i><span>Tips & Resources</span></a>
                             <!-- Profile -->
-                            <a href="#" class="list-group-item list-group-item-action py-2 ripple active"><i class="fa-solid fa-id-card-clip fa-fw me-3"></i><span>Profile</span></a>
+                            <a href="javascript: void(0)" class="list-group-item list-group-item-action py-2 ripple active"><i class="fa-solid fa-id-card-clip fa-fw me-3"></i><span>Profile</span></a>
                             <!-- Logout -->
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-lock fa-fw me-3"></i><span>Logout</span></a>
                         </div>
@@ -110,11 +110,16 @@
     
                     <!-- pyqs -->
                     <div id="f1" class="col-lg-6">
-                        <div class="profile-card-2"><img src="profPic.jpg" accept=".jpg,.jpeg,.png" class="img img-responsive">
+                        <div class="profile-card-2">
+                            <div>
+                                <image id="coolImage" src="profPic.jpg" accept="image/*" class="img img-responsive" alt="CoolPic" class="rounded-circle p-1" width="110">
+                            </div>
+                            <input id="picUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
                             <div class="profile-name">Aman Vignesh</div>
                             <div class="profile-username">{20BDS003} IIIT-Dharwad</div>
                             <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
                         </div>
+                        <p><b>#CoolPic</b></p>
                     </div>
 
                     <div class="card col-lg-6">
@@ -211,7 +216,11 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex flex-column align-items-center text-center">
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
+                                        <div id="profile-container">
+                                            <image id="profileImage" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1">
+                                         </div>
+                                         <input id="imageUpload" type="file" 
+                                                name="profile_photo" placeholder="Photo" required="" capture>
                                         <div class="mt-3">
                                             <h4>Amankd777</h4>
                                             <p class="text-secondary mb-1">20BDS003</p>

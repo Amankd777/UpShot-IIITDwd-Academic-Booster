@@ -56,7 +56,7 @@
                                 </label>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="javascript: void(0)">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Groups.html">Groups</a>
@@ -65,7 +65,15 @@
                             <a class="nav-link" href="tips and resources.html">Tips & Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a id="profile" class="nav-link" href="profile.html">Profile</a>
+                          <div class="dropdown">
+                            <div id="profile-container">
+                              <image id="profileImage" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1 dropbtn" onclick="myFunction()">
+                           </div>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="profile.html">Profile</a>
+                              <a href="#">Logout</a>
+                            </div>
+                          </div>
                         </li>
                     </ul>
 
@@ -386,32 +394,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Javascript/index.js"></script>
 </body>
-
-<!-- <li class="nav-item dropdown">
-  <a
-     class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center"
-     href="#"
-     id="navbarDropdownMenuLink"
-     role="button"
-     data-mdb-toggle="dropdown"
-     aria-expanded="false"
-     >
-    <img
-         src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg"
-         class="rounded-circle"
-         height="22"
-         alt=""
-         loading="lazy"
-         />
-  </a>
-  <ul
-      class="dropdown-menu dropdown-menu-end"
-      aria-labelledby="navbarDropdownMenuLink"
-      >
-    <li><a class="dropdown-item" href="#">My profile</a></li>
-    <li><a class="dropdown-item" href="#">Settings</a></li>
-    <li><a class="dropdown-item" href="#">Logout</a></li>
-  </ul> 
-</li>  -->
 
 </html>
