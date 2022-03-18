@@ -23,13 +23,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Manrope:wght@200;300;400;500;600;700;800&family=Raleway:wght@800&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
     <!-- css link -->
     <link rel="stylesheet" href="Css/quizint.css">
     <title>Quiz Int</title>
 </head>
 <body>
     <!-- Start quiz button -->
-    <div class="start-btn btn-outline-primary"><button>Start</button></div>
+    <div class="start-btn"><button class="btn btn-outline-primary">Start</button></div>
 
     <!-- Info Button -->
     <div class="info-box">
@@ -43,8 +44,8 @@
             <div class="info">4. No negative marking.</div>
         </div>
         <div class="buttons">
-            <button class="exit btn-danger">Exit</button>
-            <button class="restart btn-primary">Proceed</button>
+            <button class="btn exit btn-danger">Exit</button>
+            <button class="btn restart btn-primary">Proceed</button>
         </div>
     </div>
 
@@ -64,11 +65,11 @@
             <div class="option-list">
                 <div class="option">
                     <span>Validation</span>
-                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                    <!-- <div class="icon "><i class="fas fa-times"></i></div> -->
                 </div>
                 <div class="option">
                     <span>Specification</span>
-                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                    <!-- <div class="icon "><i class="fas fa-times"></i></div> -->
                 </div>
                 <div class="option">
                     <span>Development</span>
@@ -84,7 +85,7 @@
             <div class="total-que">
                 <span><p>2</p>of<p>10</p></span>
             </div>
-            <button class="next-btn btn-primary">Next</button>
+            <button class="btn next-btn btn-primary">Next</button>
         </footer>
     </div>
 
@@ -97,12 +98,11 @@
             You have completed the quiz!
         </div>
         <div class="score-text">
-            <span>and You need to practice a bit more. You've got <p>2</p> right
-            out of <p>10</p></span>
+            <span>and You need to practice a bit more. You've got <p>2</p> out of <p>10</p></span>
         </div>
         <div class="buttons">
-            <button class="restart btn-warning">Retake the quiz</button>
-            <button class="quiz btn-info">I'm Cool</button>
+            <button class="btn restart btn-warning">Retake the quiz</button>
+            <button class="btn quiz btn-info">I'm Cool</button>
         </div>
     </div>
 
