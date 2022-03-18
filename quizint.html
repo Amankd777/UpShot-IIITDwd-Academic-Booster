@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon images/favicon-32x32.png">
+    <link rel="manifest" href="favicon images/site.webmanifest">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/f93fdc1f3e.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Manrope:wght@200;300;400;500;600;700;800&family=Raleway:wght@800&display=swap"
+        rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="Css/quizint.css">
+    <title>Quiz Int</title>
+</head>
+<body>
+    <!-- Start quiz button -->
+    <div class="start-btn btn-outline-primary"><button>Start</button></div>
+
+    <!-- Info Button -->
+    <div class="info-box">
+        <div class="info-title">
+            <span>Rules of the Quiz</span>
+        </div>
+        <div class="info-list">
+            <div class="info">1. Once you select an answer, you cannot reselect it.</div>
+            <div class="info">2. You can't exit from the quiz while you are playing.</div>
+            <div class="info">3. +1 for Correct answer.</div>
+            <div class="info">4. No negative marking.</div>
+        </div>
+        <div class="buttons">
+            <button class="exit btn-danger">Exit</button>
+            <button class="restart btn-primary">Proceed</button>
+        </div>
+    </div>
+
+    <!-- Quiz box -->
+    <div class="quiz-box">
+        <header>
+            <div class="title">DS203 Quiz</div>
+            <div class="timer">
+                <div class="timer-text">Time left</div>
+                <div class="timer-sec">90</div>
+            </div>
+        </header>
+        <section>
+            <div class="que-text">
+                <span>____________ is a software development activity that is not a part of software processes.</span>
+            </div>
+            <div class="option-list">
+                <div class="option">
+                    <span>Validation</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Specification</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Development</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Dependence</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="total-que">
+                <span><p>2</p>of<p>10</p></span>
+            </div>
+            <button class="next-btn btn-primary">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result box -->
+    <div class="result-box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete-text">
+            You have completed the quiz!
+        </div>
+        <div class="score-text">
+            <span>and You need to practice a bit more. You've got <p>2</p> right
+            out of <p>10</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart btn-warning">Retake the quiz</button>
+            <button class="quiz btn-info">I'm Cool</button>
+        </div>
+    </div>
+
+    <!-- javascript link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Javascript/quizint.js"></script>
+</body>
+</html>
