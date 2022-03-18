@@ -40,7 +40,7 @@ checkbox.addEventListener("change", () => {
   })
 
 // Cool pic
-$("#coolImage").click(function(e) {
+$("#myDropdown1").click(function(e) {
   $("#picUpload").click();
 });
 
@@ -57,7 +57,7 @@ function fastPreview( uploader ) {
 }
 
 // Profile Pic
-$("#profileImage").click(function(e) {
+$("#myDropdown").click(function(e) {
   $("#imageUpload").click();
 });
 

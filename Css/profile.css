@@ -201,8 +201,6 @@ a.navbar-brand{
     margin: 1%;
 }
 
-
-
 .profile-card-2 {
     background-color: #FFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
@@ -344,10 +342,6 @@ a.navbar-brand{
     display: none;
 }
 
-#profileImage:hover{
-    cursor: pointer;
-}
-
 #picUpload
 {
     display: none;
@@ -368,4 +362,14 @@ a.navbar-brand{
     width: 100px;
 }
 
+#myDropdown a{
+    text-decoration: none;
+    color: green;
+}
 
+#myDropdown1 a{
+    text-decoration: none;
+    color: lightcoral;
+    justify-content: center;
+    margin-left: 38%;
+}
