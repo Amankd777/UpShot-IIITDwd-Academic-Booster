@@ -62,9 +62,6 @@
                             <a class="nav-link" href="Groups.html">Groups</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tips and resources.html">Tips & Resources</a>
-                        </li>
-                        <li class="nav-item">
                           <div class="dropdown">
                             <div id="profile-container">
                               <image id="profileImage" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1 dropbtn" onclick="myFunction()">
@@ -92,29 +89,20 @@
 
                 <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-
-                <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
             </div>
 
             <div class="carousel-inner">
                 <!-- carousel items -->
                 <div class="carousel-item active" data-bs-interval="5000">
-                    <a href="#"><img src="Carousel-Images/syllabus.png" class="d-block w-100" alt="Syllabus"></a>
+                    <a href="javascript: void(0)" class="modal-box-4"><img src="Carousel-Images/syllabus.png" class="d-block w-100 modal-box-4" alt="Syllabus"></a>
                     <div class="carousel-caption d-none d-md-block"></div>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="quizint.html"><img src="Carousel-Images/quiz.png" class="d-block w-100" alt="Take a quiz"></a>
+                    <a href="javascript: void(0)" class="modal-box-5"><img src="Carousel-Images/quiz.png" class="d-block w-100 modal-box-5" alt="Take a quiz"></a>
                     <div class="carousel-caption d-none d-md-block">
                         </p>
                     </div>
-                </div>
-
-                <div class="carousel-item">
-                    <a href="#"><img src="Carousel-Images/Trackyourprogress.png" class="d-block w-100"
-                            alt="Track your Progress"></a>
-                    <div class="carousel-caption d-none d-md-block"></div>
                 </div>
             </div>
             <!-- carousel buttons -->
@@ -369,6 +357,136 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="modal" id="Syllabus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-toggle="modal" data-target="#modalQuickView" data-backdrop="true" data-keyboard="false"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                      data-ride="carousel">
+                      
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100"
+                            src="https://miro.medium.com/max/1023/1*CG7bWJwi29dAKKPInSwk6A.png">
+                        </div>
+                        <div class="carousel-item"></div>
+                        <div class="carousel-item"></div>
+                      </div>
+                      <!--/.Slides-->
+
+                    </div>
+                    <!--/.Carousel Wrapper-->
+
+                  </div>
+
+                  <!-- Heading -->
+                  <div class="col-lg-7">
+                    <h2 class="h2-responsive product-name">
+                      <strong>Syllabus</strong><br><br>
+                      <p>Select A Course</p>
+                    </h2>  
+                    <!-- /.Heading -->          
+  
+                  <!-- Course list -->
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Linear Algebra</a>
+                      <a href="Syllabus.html" class="list-group-item list-group-item-action">Software Engineering</a>
+                      <a href="#" class="list-group-item list-group-item-action">Database Management Systems </a>
+                      <a href="#" class="list-group-item list-group-item-action">Introduction to Systems Thinking</a>
+                      <a href="#" class="list-group-item list-group-item-action">Cloud Computing</a>
+                      <a href="#" class="list-group-item list-group-item-action">Global Business Perspectives</a>
+                    </div>
+                    <!-- /.Course list -->
+        
+        
+                    <!-- Add to Cart -->
+                    <div class="card-body">
+                      <div class="row">                      
+                      </div>
+                      <div class="text-center">      
+                        <button type="button" class="btn btn-danger close" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    <!-- /.Add to Cart -->
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="modal" id="quiz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" data-toggle="modal" data-target="#modalQuickView" data-backdrop="true" data-keyboard="false"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-5">
+
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+                      data-ride="carousel">
+                      
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100"
+                            src="https://i.pinimg.com/originals/04/b3/2c/04b32c9b94670db23db8bec473099859.png">
+                        </div>
+                        <div class="carousel-item"></div>
+                        <div class="carousel-item"></div>
+                      </div>
+                      <!--/.Slides-->
+
+                    </div>
+                    <!--/.Carousel Wrapper-->
+
+                  </div>
+
+                  <!-- Heading -->
+                  <div class="col-lg-7">
+                    <h2 class="h2-responsive product-name">
+                      <strong>Attempt a Quiz</strong><br><br>
+                      <p>Select A Course</p>
+                    </h2>  
+                    <!-- /.Heading -->          
+  
+                  <!-- Course list -->
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Linear Algebra</a>
+                      <a href="quizint.html" class="list-group-item list-group-item-action">Software Engineering</a>
+                      <a href="#" class="list-group-item list-group-item-action">Database Management Systems </a>
+                      <a href="#" class="list-group-item list-group-item-action">Introduction to Systems Thinking</a>
+                      <a href="#" class="list-group-item list-group-item-action">Cloud Computing</a>
+                      <a href="#" class="list-group-item list-group-item-action">Global Business Perspectives</a>
+                    </div>
+                    <!-- /.Course list -->
+        
+        
+                    <!-- Add to Cart -->
+                    <div class="card-body">
+                      <div class="row">                      
+                      </div>
+                      <div class="text-center">      
+                        <button type="button" class="btn btn-danger close" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    <!-- /.Add to Cart -->
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 
     <!-- Professor contact section  -->

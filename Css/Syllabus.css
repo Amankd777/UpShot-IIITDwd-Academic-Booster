@@ -1,0 +1,266 @@
+/* body */
+body{
+    color: black;
+    font-family: 'Manrope', sans-serif;
+    background-color: rgb(255, 255, 255);
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+}
+
+/* navbar */
+.label {
+    height: 26px;
+    width: 27px;
+    border-radius: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    padding: 6px;
+}
+
+/* Theme toggler */
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+/* Theme icons */
+.fa-moon{
+    color: #f1c40f;
+}
+
+/* navbar text */
+.navbar-text{
+    font-size: 1.3rem;
+    padding-left: 4%;
+    font-family: 'Comfortaa', cursive;
+}
+
+a.navbar-brand{
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(235, 71, 30);
+}
+
+.navbar-light .navbar-brand:hover {
+    color: rgb(218, 87, 54);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(211, 49, 49);
+    font-weight: 500;
+}
+
+@media (min-width: 950px) {
+    main {
+      padding-left: 300px;
+ }
+}
+  
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 275px;
+    z-index: 600;
+}
+
+.sidebarMenu{
+    width: 300px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    margin-left: 280px;
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+@media (max-width: 990px) {
+    #main{
+        margin-left: 1%;
+        padding: 3%;
+        width: 100%;
+    }
+    .sidebarMenu{
+        width: 0px;
+    }
+    .desc-img{
+        width: 80%;
+        height: 100%;
+        padding-left: 15%;
+        padding-top: 5%;
+    } 
+    .btn{
+        border-radius: 40px;
+        margin: 7%;
+        margin-bottom: 3%;
+        margin-left: 23%;
+    }       
+    .label {
+        height: 25px;
+        width: 27px;
+        border-radius: 50%;
+    }
+    .ball{
+        visibility: hidden;
+    }
+    .fa-sun{
+        display: none;
+    }
+    .dark-mode .navbar-toggler{
+        width: 4px;
+        height: 2px;
+        background-color: white;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 990px) {
+    #navbar-mod{
+        display: none;
+    }
+}
+
+
+/* navbar dark mode */
+.dark-mode #navbar-mod{
+    background-color: #272a33;
+}
+.dark-mode .navbar-brand {
+    color: rgb(255, 191, 95);
+}
+
+.dark-mode .navbar-brand:hover {
+    color: rgb(233, 195, 138);
+}
+
+.dark-mode .navbar-toggler{
+    background-color: white;
+}
+
+
+/* Body-dark mode */
+.dark-mode {
+    background-color: #272a33;
+    color: white;
+  }
+
+.dark-mode a{
+    color: rgb(255, 199, 125);
+}
+
+.dark-mode a:hover{
+    color: whitesmoke;
+}
+
+.dark-mode h5,p{
+    color: #111;
+}
+
+.dark-mode .card a{
+    color: azure;
+}
+
+.dark-mode #sidebar{
+    background-color: #2d313d;
+}
+
+.dark-mode .list-group-item{
+    color: rgb(252, 157, 157);
+}
+
+.dark-mode .list-group-item:hover{
+    color: black;
+}
+
+/* navbar dark mode */
+.dark-mode .navbar-brand {
+    color: rgb(255, 191, 95);
+}
+
+.dark-mode .navbar-brand:hover {
+    color: rgb(233, 195, 138);
+}
+
+
+/* navbar margin */
+.container-fluid{
+    margin: 1%;
+}
+
+.py-2{
+    background-color: rgb(248, 249, 250);
+}
+
+.dark-mode .py-2{
+    background-color: #2d313d;
+}
+
+.dark-mode .py-2:hover{
+    color: white;
+}
+
+.py-2:hover{
+    color: rgb(243, 196, 65);
+}
+
+h5{
+    color: rgb(118, 118, 255);
+}
+
+.dark-mode h5{
+    color: rgb(162, 162, 238);
+}
+
+.dark-mode p{
+    color: whitesmoke;
+}
+
+.dark-mode strong{
+    color: #fff0b3;
+}
+
+h6{
+    color: red;
+}
+
+.dark-mode .accordion-collapse{
+    background-color: #17191f;
+}
+
+.dark-mode .accordion-button{
+    background-color: #e1e9ff;
+}
+
+.dark-mode .accordion{
+    background-color: #2d313d;
+}
+
+#navbar-example2{
+    margin-bottom: 15px;
+}
+
+.dark-mode h4{
+    color: #ded09a;
+}
+
+.dark-mode h5{
+    color: #93c1ef;
+}
+
+.dark-mode .nav{
+    background-color: #21283c;
+}

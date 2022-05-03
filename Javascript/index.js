@@ -90,3 +90,25 @@ $(".close").click(function(){
   $("body").css("overflow-y","visible");
 });
 
+var modalSyllabus = $("#Syllabus");
+$(".modal-box-4").click(function(){
+  setTimeout(function(){
+    modalSyllabus.show();
+  },250)
+});
+$(".close").click(function(){
+  modalSyllabus.hide();
+  $("body").css("overflow-y","visible");
+});
+
+var modalquiz = $("#quiz");
+$(".modal-box-5").click(function(){
+  setTimeout(function(){
+    modalquiz.show();
+  },250)
+});
+$(".close").click(function(){
+  modalquiz.hide();
+  $("body").css("overflow-y","visible");
+});
+
