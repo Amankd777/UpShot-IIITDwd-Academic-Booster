@@ -11,13 +11,12 @@ UpShot is a prototype frontend website designed to serve as a one-stop destinati
 ## Screenshots
 
 <img src="IIITDWD_Papers/1.png" width=50% height=50%>
-![Home Page](IIITDWD_Papers/1.png)
-![Home Page Dark](IIITDWD_Papers/2.png)
-![Quiz](IIITDWD_Papers/6.png)
-![Resources Section mini](IIITDWD_Papers/5.png)
-![Group Creation](IIITDWD_Papers/3.png)
-![Profile Section](IIITDWD_Papers/4.png)
-![Responsive](IIITDWD_Papers/8.png)
+<img src="IIITDWD_Papers/2.png" width=50% height=50%>
+<img src="IIITDWD_Papers/6.png" width=50% height=50%>
+<img src="IIITDWD_Papers/5.png" width=50% height=50%>
+<img src="IIITDWD_Papers/3.png" width=50% height=50%>
+<img src="IIITDWD_Papers/4.png" width=50% height=50%>
+<img src="IIITDWD_Papers/1.png">
 
 ## Installation
 
